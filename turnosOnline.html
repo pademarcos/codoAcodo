@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título de la página -->
+    <title>Clínica Odontológica - Turnos Online</title>
+
+    <!-- Favicon -->
+
+    <link rel="shortcut icon" href="imagenes/icono1.webp" type="image/x-icon" />
+    <!-- Linkear la hoja de estilos -->
+    <link rel="stylesheet" href="turnosOnline.css" />
+
+    <!-- Bootstrap -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- Barra de Navegación -->
+
+    <nav class="navbar navbar-expand-sm">
+      <a href="index.html" target="_blank">
+        <img src="imagenes/icono1.webp" alt="Logo de la Clínica Odontológica" />
+      </a>
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#opciones"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="opciones">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" target="_blank">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="quienesSomos.html" target="_blank">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a href="tratamientos.html" target="_blank">Tratamientos</a>
+            </li>
+            <li class="nav-item">
+              <a href="contacto.html" target="_blank">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a href="turnosOnline.html">Turno Online</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    
+    <!--===== FORMULARIO UTILIZANDO FORMSPREE===== -->
+    
+    <div class="formulario">
+      <img
+      src="imagenes/fondoTurno.jpg"
+      alt="imagen de muela con calendario"
+      class="bg-image"
+      />
+      
+      <form action="https://formspree.io/f/mdoqlwqe" method="POST">
+
+        <h1>Solicite su turno</h1>
+<p>(Para poder ofrecerle un turno acorde a sus necesidades, por favor complete todos los campos del formulario. A la brevedad se le estará enviando el turno solicitado. <br>Le rogamos no hacerlo en más de una oportunidad para el mismo paciente, ya que eso perjudicaría el otorgamiento del mismo.)</p> <br>
+
+
+        <label>
+          <b>Nombre y Apellido del/la paciente:</b>
+          <input type="text" placeholder="Ej: José/María Pérez" required />
+        </label>
+        <br /><br />
+        <label
+          ><b>Edad:</b>
+          <input type="number" min="1" max="100" required />
+        </label>
+        <br /><br />
+        <label>
+          <b>Correo electrónico:</b>
+          <input
+            type="email"
+            placeholder="Ej. nombre@gmail.com"
+            name="email"
+            required
+          />
+        </label>
+        <br /><br />
+        <label
+          ><b>Motivo de la consulta</b>
+          <select>
+            <option value="">Consulta</option>
+            <option value="">Tratamiento</option>
+            <option value="">Presupuesto</option>
+          </select>
+        </label>
+        <br /><br/>
+        <label
+          ><b>Selecciona el día que prefieres el turno:</b> <br/>
+          (Sujeto a disponibilidad) <br/>
+          <input type="date" />
+        </label>
+
+        <br /><br />
+        <label>
+          <b>Horario que prefieres el turno:</b>
+          <input type="radio" name="opcion" value="1" /> Mañana
+          <input type="radio" name="opcion" value="2" /> Tarde
+        </label>
+        <br /><br />
+        <label>
+          <b>¿Ya eres paciente de nuestra institución?</b>
+          <input type="checkbox" name="si" value="1" />Si
+        </label>
+        <br /><br />
+
+        <label>
+          <b>Dejanos un comentarios:</b>
+          <br /><br>
+          <textarea
+            name="message"
+            placeholder="Quisiera indicar que..."
+          ></textarea>
+        </label>
+        <br /><br />
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <!--===== SECCION FOOTER =====-->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <span class="copyright">Copyright &copy; Codo a Codo 2024</span>
+          </div>
+
+          <div class="col-md-12">
+            <ul>
+              <li class="item"><a href="#">Privacy Policy</a></li>
+              <li class="item"><a href="#">Terms of Use</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--===== Script Fontawesone =====-->
+    <script
+      src="https://kit.fontawesome.com/830a4cd030.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--===== Script Bootstrap =====-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Sección Barra de Navegación */
+
+nav {
+  background-color: rgb(26, 117, 188);
+}
+
+nav img {
+  align-items: center;
+  border-radius: 100%;
+  justify-content: center;
+  padding: 10px;
+  width: 80px;
+}
+
+nav ul {
+  align-items: center;
+  color: rgb(240, 248, 255);
+  display: flex;
+  font-size: 25px;
+  gap: 100px;
+  list-style-type: none;
+}
+
+nav ul a {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav-item {
+  margin: auto;
+  padding: auto;
+  color: rgb(255, 255, 255);
+}
+
+/* Carrusel */
+.carousel {
+  margin-top: 94px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  max-height: 460px;
+}
+
+.carousel-inner {
+  height: 400px;
+}
+
+/* ===== Redes Sociales ===== */
+.redes {
+  align-items: center;
+  background-color: rgb(181, 181, 181);
+  color: #000000;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding-top: 1.5em;
+}
+.redes h2 {
+  text-align: center;
+}
+
+.redes .list-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.redes a {
+  color: rgb(26, 117, 188);
+}
+
+.list-group {
+  align-items: center;
+  gap: 80px;
+  justify-content: center;
+}
+
+.list-group-item {
+  color: rgb(43, 43, 43);
+}
+
+.fa-square-instagram:hover {
+  background-image: url("imagenes/instagram.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 1.5px;
+  color: transparent;
+  transform: scale(2.5);
+  transition: 0.4s ease-in-out;
+}
+
+.fa-facebook:hover {
+  background-image: url("/imagenes/facebook.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 1.5px;
+  color: transparent;
+  transform: scale(2.5);
+  transition: 0.4s ease-in-out;
+}
+
+.fa-twitter:hover {
+  background-image: url("/imagenes/twitter.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 1.5px;
+  color: transparent;
+  transform: scale(2.5);
+  transition: 0.4s ease-in-out;
+}
+
+.fa-whatsapp:hover {
+  background-image: url("imagenes/WhatsApp.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 1.5px;
+  color: transparent;
+  transform: scale(2.5);
+  transition: 0.4s ease-in-out;
+}
+
+/* ===== Quitamos margen y fondo a los íconos de las redes sociales ===== */
+.redes li {
+  --bs-list-group-bg: transparent;
+  --bs-list-group-border-color: none;
+}
+
+li {
+  list-style-type: none; /*quita los puntitos de la lista */
+  margin-left: -3%;
+}
+
+/* ===== SECCION FOOTER ===== */
+
+.footer {
+  display: flex;
+  background: #404040;
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+footer li {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.item a:hover {
+  color: #45f3ff;
+}
+
+/* SCROLL */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(181, 181, 181);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(26, 117, 188);
+}

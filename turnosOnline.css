@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+
+  /* Sección Barra de Navegación */
+  
+  nav {
+    background-color: rgb(26, 117, 188);
+    /* display: flex; */
+  }
+  
+  nav img {
+    align-items: center;
+    border-radius: 100px;
+    justify-content: center;
+    padding: 10px;
+    width: 80px;
+  }
+  
+  
+  
+  nav ul {
+    align-items: center;
+    color: rgb(240, 248, 255);
+    display: flex;
+    font-size: 25px;
+    gap: 100px;
+    list-style-type: none;
+     
+  
+  }
+  
+  nav ul a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .nav-item {
+    margin: auto;
+    padding: auto;
+    color: rgb(255, 255, 255);
+  }
+
+
+
+
+
+
+.formulario{
+  position: relative;
+}
+
+input, select, textarea{
+  border-radius: 5px;
+}
+
+
+.bg-image{
+  display: flex;
+  opacity: 0.3;
+  width: 100%;
+height: auto;
+}
+
+form{
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+
+
+  
+  
+  
+   /* ===== SECCION FOOTER ===== */
+  
+  .footer {
+    display: flex;
+    background: rgb(64, 64, 64);
+  }
+  
+  footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer .copyright {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+  }
+  
+  footer li {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .item a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  .item a:hover {
+    color: rgb(69, 243, 255);
+  }
+  
+  /* SCROLL */
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgb(181, 181, 181);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(26, 117, 188);
+  }
+  
