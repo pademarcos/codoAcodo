@@ -25,7 +25,30 @@
   <body>
     <!-- Barra de Navegación -->
 
-    <nav class="navbar navbar-expand-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(26, 117, 188);">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="imagenes/icono1.webp" alt="Logo pequeño de la Clínica Odontológica" width="30" height="24">
+
+          Clínica Odontológica
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            <a class="nav-link" href="quienesSomos.html">Quienes Somos</a>
+            <a class="nav-link" href="tratamientos.html">Tratamientos</a>
+            <a class="nav-link" href="contacto.html">Contacto</a>
+            <a class="nav-link" href="turnosOnline.html">Turno Online</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+
+    <!-- <nav class="navbar navbar-expand-sm">
       <a href="index.html" target="_blank">
         <img src="imagenes/icono1.webp" alt="Logo de la Clínica Odontológica" />
       </a>
@@ -58,12 +81,79 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
 
 
     
     <!--===== FORMULARIO UTILIZANDO FORMSPREE===== -->
-    
+<div class="formulario">
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Solicite su turno</h5>
+            <p class="card-text">Para poder ofrecerle un turno acorde a sus necesidades, por favor complete todos los campos del formulario. A la brevedad se le estará enviando el turno solicitado. Le rogamos no hacerlo en más de una oportunidad para el mismo paciente, ya que eso perjudicaría el otorgamiento del mismo.</p>
+            <form action="https://formspree.io/f/mdoqlwqe" method="POST" class="formulario-grid">
+              <div class="grid-item">
+                <label for="nombrePaciente" class="form-label"><b>Nombre y Apellido del/la paciente:</b></label>
+                <input type="text" class="form-control" id="nombrePaciente" name="nombrePaciente" placeholder="Ej: José/María Pérez" required>
+              </div>
+              <div class="grid-item">
+                <label for="edadPaciente" class="form-label"><b>Edad:</b></label>
+                <input type="number" class="form-control" id="edadPaciente" name="edadPaciente" min="1" max="100" required>
+              </div>
+              <div class="grid-item">
+                <label for="emailPaciente" class="form-label"><b>Correo electrónico:</b></label>
+                <input type="email" class="form-control" id="emailPaciente" placeholder="Ej. nombre@gmail.com" name="email" required>
+              </div>
+              <div class="grid-item">
+                <label for="motivoConsulta" class="form-label"><b>Motivo de la consulta:</b></label>
+                <select class="form-select" id="motivoConsulta">
+                  <option value="consulta">Consulta</option>
+                  <option value="tratamiento">Tratamiento</option>
+                  <option value="presupuesto">Presupuesto</option>
+                </select>
+              </div>
+              <div class="grid-item">
+                <label for="fecha" class="form-label"><b>Selecciona el día que prefieres el turno:</b> (Sujeto a disponibilidad)</label>
+                <input type="date" class="form-control" id="fecha">
+              </div>
+              <div class="grid-item">
+                <label class="form-label"><b>Horario que prefieres el turno:</b></label>
+                <div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="opcion" id="manana" value="1">
+                    <label class="form-check-label" for="manana">Mañana</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="opcion" id="tarde" value="2">
+                    <label class="form-check-label" for="tarde">Tarde</label>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <label class="form-label"><b>¿Ya eres paciente de nuestra institución?</b></label>
+                <div>
+                  <input class="form-check-input" type="checkbox" id="esPaciente" name="si" value="1">
+                  <label class="form-check-label" for="esPaciente">Sí</label>
+                </div>
+              </div>
+              <div class="grid-item">
+                <label for="comentarios" class="form-label"><b>Déjanos un comentario:</b></label>
+                <textarea class="form-control" id="comentarios" name="message" placeholder="Quisiera indicar que..." rows="3"></textarea>
+              </div>
+              <div class="grid-item">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>    
+<!--     
     <div class="formulario">
       <img
       src="imagenes/fondoTurno.jpg"
@@ -137,7 +227,7 @@
 
         <button type="submit">Enviar</button>
       </form>
-    </div>
+    </div> -->
 
     <!--===== SECCION FOOTER =====-->
 

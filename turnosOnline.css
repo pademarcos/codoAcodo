@@ -1,28 +1,36 @@
 body{
     margin: 0;
     padding: 0;
-    
-    
 }
 
+.formulario {
+  background-image: url('imagenes/fondoTurno.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.9); 
+  border-radius: 15px;
+  padding: 20px;
+}
 
   /* Sección Barra de Navegación */
   
-  nav {
+  /* nav {
     background-color: rgb(26, 117, 188);
-    /* display: flex; */
-  }
+    display: flex;
+  } */
   
-  nav img {
+  /* nav img {
     align-items: center;
     border-radius: 100px;
     justify-content: center;
     padding: 10px;
     width: 80px;
-  }
-  
-  
-  
+  } */
+/* 
   nav ul {
     align-items: center;
     color: rgb(240, 248, 255);
@@ -30,8 +38,6 @@ body{
     font-size: 25px;
     gap: 100px;
     list-style-type: none;
-     
-  
   }
   
   nav ul a {
@@ -46,11 +52,6 @@ body{
     color: rgb(255, 255, 255);
   }
 
-
-
-
-
-
 .formulario{
   position: relative;
 }
@@ -58,7 +59,6 @@ body{
 input, select, textarea{
   border-radius: 5px;
 }
-
 
 .bg-image{
   display: flex;
@@ -71,19 +71,23 @@ form{
   position: absolute;
   top: 30px;
   left: 20px;
-}
+} */
 
-
-
-  
-  
-  
    /* ===== SECCION FOOTER ===== */
-  
-  .footer {
+
+   .footer {
     display: flex;
     background: rgb(64, 64, 64);
   }
+
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  /* .footer {
+    display: flex;
+    background: rgb(64, 64, 64);
+  } */
   
   footer .container {
     display: flex;
